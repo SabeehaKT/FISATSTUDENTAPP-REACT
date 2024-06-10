@@ -7,7 +7,6 @@ const SearchStudent = () => {
         "name":""
     }
 )
-
 const inputHandler=(event)=>{
     setData({...data,[event.target.name]:[event.target.value]})
 }

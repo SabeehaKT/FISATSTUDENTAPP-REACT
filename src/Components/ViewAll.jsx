@@ -37,7 +37,7 @@ const ViewAll = () => {
                                     {data.map(
                                         (value,index) => {
                                             return  <tr>
-                                            <th scope="row">{value._id}</th>
+                                            <th scope="row">{index+1}</th>
                                             <td>{value.firstname}</td>
                                             <td>{value.lastname}</td>
                                             <td>{value.college}</td>

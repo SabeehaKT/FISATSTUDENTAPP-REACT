@@ -4,13 +4,13 @@ import NavBar from './NavBar'
 const AddStudent = () => {
     const [data,setData]= useState(
         {
-            "fname":"",
-            "lname":"",
+            "firstname":"",
+            "lastname":"",
             "college":"",
             "dob":"",
             "course":"",
-            "mobileno":"",
-            "emailid":"",
+            "mobile":"",
+            "email":"",
             "address":""
         }
     )
@@ -31,11 +31,11 @@ const AddStudent = () => {
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">First Name</label>
-                            <input type="text" className="form-control" name="fname" value={data.fname} onChange={inputHandler} />
+                            <input type="text" className="form-control" name="firstname" value={data.fname} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Last Name</label>
-                            <input type="text" className="form-control" name="lname" value={data.lname} onChange={inputHandler} />
+                            <input type="text" className="form-control" name="lastname" value={data.lname} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">College</label>
@@ -51,11 +51,11 @@ const AddStudent = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Mobile No.</label>
-                            <input type="text" className="form-control" name="mobileno" value={data.mobileno} onChange={inputHandler}/>
+                            <input type="text" className="form-control" name="mobile" value={data.mobileno} onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Email ID</label>
-                            <input type="text" className="form-control" name="emailid" value={data.emailid} onChange={inputHandler}/>
+                            <input type="text" className="form-control" name="email" value={data.emailid} onChange={inputHandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label htmlFor="" className="form-label">Address</label>
